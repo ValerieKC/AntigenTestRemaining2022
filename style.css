@@ -1,0 +1,218 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width:100%;
+  height: 100%;  /*Google Map API那裏的建議*/
+  font-family: "Lato", "Noto Sans TC", sans-serif;
+  background-color: #fffff2;
+  font-size: 14px;
+}
+
+.page-title {
+  /* outline: 3px solid tomato; */
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0;
+  letter-spacing: 3px;
+  background: rgba(249, 249, 169, 1);
+    background: -moz-linear-gradient(top, rgba(249, 249, 169, 1) 0%, rgba(255, 218, 138, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(249, 249, 169, 1)), color-stop(100%, rgba(255, 218, 138, 1)));
+    background: -webkit-linear-gradient(top, rgba(249, 249, 169, 1) 0%, rgba(255, 218, 138, 1) 100%);
+    background: -o-linear-gradient(top, rgba(249, 249, 169, 1) 0%, rgba(255, 218, 138, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(249, 249, 169, 1) 0%, rgba(255, 218, 138, 1) 100%);
+    background: linear-gradient(to bottom, rgba(249, 249, 169, 1) 0%, rgba(255, 218, 138, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9a9', endColorstr='#ffda8a', GradientType=0);
+}
+
+.container{
+  margin: 0 auto;
+  padding: 0;
+  /* outline: 3px solid tomato; */
+  max-width:1600px; /* 解決container右側有一大塊空白 */
+  min-height: calc(100% - 60px);
+}
+
+
+.drop-down-panel{
+  position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width:100%;
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  background-color: rgba(255,89,143, 0.9);
+
+}
+
+.my-style-selector {
+  display: flex;
+  justify-content: center;
+  margin:10px auto;
+}
+
+.my-style-selector select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: flex;
+  border-color: #6ec3f5;
+  border-width: 2px;
+  border-radius: 10em;
+  color: #1390e8;
+  margin-right: 10px;
+  outline: none;
+  padding: 0.3em 1.25em;
+  text-align: center;
+}
+
+.btn-enter-div{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin-bottom: 10px;;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.BtnEnter{
+  border-radius: 10em;
+  width:10em;
+  color: #1390e8;
+  border-color: transparent;
+}
+
+.BtnEnter:hover{
+  color: #fffb96;
+  border-color: transparent;
+  background-color: #1390e8;
+}
+
+.TablePanel{
+  margin: 30px 10px;
+  /* overflow-x: auto */
+}
+
+h3.initialize{
+height: 100px;
+margin:20px;
+display: flex;
+justify-content: center;
+}
+
+table {
+  width: 100%;
+  
+}
+
+th,
+td {
+  border: 2px solid whitesmoke;
+  background-color: #96d4d4;
+  border-radius: 10px;
+  text-align: center;
+}
+
+table tbody:hover td {
+  background-color: white;
+}
+
+td:nth-child(1),
+td:nth-child(3) {
+  text-align: left;
+}
+
+th:nth-child(1) {
+  width: 15%;
+} 
+
+th:nth-child(2) {
+  width: 5%;
+}
+
+th:nth-child(3) {
+  width: 50%;
+}
+
+th:nth-child(5) {
+  width: 10%;
+}
+
+td:nth-child(2) {
+  color: red;
+  font-weight: bold;
+}
+
+.note {
+  background-color: #99f7ac;
+}
+
+button.GoogleMapModal{ 
+  width: 50%;
+  background-color:transparent;
+  border-color:#fffff2;
+  color:black;
+  transition-duration: 0.4s;
+
+}
+
+button.GoogleMapModal:hover {
+  /* width: 100%; */
+  font-size: 1.3em;;
+  font-weight: bold; 
+  background-color: transparent;
+  border-color: orange;
+  border-color: transparent;
+
+}
+
+button.GoogleMapModal:active{
+  color:#ffffe3;
+  background-color: #4b5162;
+}
+
+.noInfo{
+  height:250px;
+  line-height: 250px;
+  text-align: center;
+  background-color:#01cedd3c;
+}
+
+footer{
+  height:60px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  background: rgba(249, 249, 169, 1);
+    background: -moz-linear-gradient(top, rgba(249, 249, 169, 1) 0%, rgba(255, 218, 138, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(249, 249, 169, 1)), color-stop(100%, rgba(255, 218, 138, 1)));
+    background: -webkit-linear-gradient(top, rgba(249, 249, 169, 1) 0%, rgba(255, 218, 138, 1) 100%);
+    background: -o-linear-gradient(top, rgba(249, 249, 169, 1) 0%, rgba(255, 218, 138, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(249, 249, 169, 1) 0%, rgba(255, 218, 138, 1) 100%);
+    background: linear-gradient(to bottom, rgba(249, 249, 169, 1) 0%, rgba(255, 218, 138, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9a9', endColorstr='#ffda8a', GradientType=0);
+}
+
+a.source-Link{
+  text-decoration: none;
+}
+
+/* 
+ * Always set the map height explicitly to define the size of the div element
+ * that contains the map. 
+ */
+#map {
+  /* height: 100%;default */
+  height: 300px;
+
+}
+
+
