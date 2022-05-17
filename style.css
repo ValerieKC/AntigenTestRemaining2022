@@ -31,11 +31,10 @@ body {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f9f9a9', endColorstr='#ffda8a', GradientType=0);
 }
 
-.container{
-  margin: 0 auto;
+.info-container{
+  margin: 0;
   padding: 0;
   /* outline: 3px solid tomato; */
-  max-width:1600px; /* 解決container右側有一大塊空白 */
   min-height: calc(100% - 60px);
 }
 

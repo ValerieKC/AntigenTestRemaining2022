@@ -1,4 +1,4 @@
-const container = document.querySelector(".container");
+const InfoContainer = document.querySelector(".info-container");
 const citySelector = document.querySelector(".city-selector");
 const BtnEnter = document.querySelector(".BtnEnter");
 const TablePanel = document.querySelector(".TablePanel");
@@ -101,7 +101,7 @@ function SearchStoreList(event) {
       noInfo.remove()
     }
     
-    const initial = container.firstElementChild.nextElementSibling.nextElementSibling
+    const initial = InfoContainer.firstElementChild.nextElementSibling.nextElementSibling
     if (initial.classList.value.includes("initialize")) {
       initial.remove()
     }
