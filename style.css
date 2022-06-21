@@ -34,7 +34,6 @@ body {
 .info-container{
   margin: 0;
   padding: 0;
-  /* outline: 3px solid tomato; */
   min-height: calc(100% - 60px);
 }
 
@@ -118,10 +117,6 @@ td {
   background-color: #96d4d4;
   border-radius: 10px;
   text-align: center;
-}
-
-table tbody:hover td {
-  background-color: white;
 }
 
 td:nth-child(1),

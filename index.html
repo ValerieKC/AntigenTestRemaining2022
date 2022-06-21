@@ -27,8 +27,8 @@
     <!-- Drop down List -->
     <div class="drop-down-panel">
       <div role="tw-city-selector" class="city-selector my-style-selector city-selector-standard-words">
-        <select class="county SelectCounty"></select>
-        <select class="district SelectDistrict"></select>
+        <select class="county SelectCounty" id="county-id"></select>
+        <select class="district SelectDistrict" id="district-id"></select>
       </div>
       <div class="btn-enter-div">
         <button class="BtnEnter"><i class="fa-solid fa-magnifying-glass">點擊搜尋</i></button>
@@ -41,14 +41,16 @@
       <table>
         <thead>
           <tr>
-            <th>醫事機構名稱</th>
-            <th>庫存</th>
-            <th>地址/備註</th>
-            <th>電話</th>
-            <th>廠牌/地圖</th>
+            <th id="name">醫事機構名稱</th>
+            <th id="amount">庫存</th>
+            <th id="Address&note">地址/備註</th>
+            <th id="phone">電話</th>
+            <th id="brand&map">廠牌/地圖</th>
           </tr>
-        </thead>
-        <!--  搜尋到的店舖資料列Table如下: -->
+        </thead>        
+        <tbody id="storeTable">
+<!--  搜尋到的店舖資料列Table如下: -->
+        </tbody>
       </table>
     </div>
     <!-- 初始頁面資訊 -->
